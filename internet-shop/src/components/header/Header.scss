@@ -1,8 +1,12 @@
 //Mixins
 @mixin flexbox {
   display: flex;
-  justify-content: space-around;
+  width: 100%;
   align-items: center;
+}
+@mixin link {
+  text-decoration: none;
+  color: $main-color;
 }
 //Variables
 $main-color: #4877ef;
@@ -11,7 +15,41 @@ $main-color: #4877ef;
   @include flexbox;
   color: $main-color;
 }
+
+.header-logo-name {
+  @include link;
+  font-size: 1.5rem;
+  padding-left: 50px;
+}
+.categories {
+  @include flexbox;
+  justify-content: center;
+}
 .header-link {
-  text-decoration: none;
-  color: $main-color;
+  @include link;
+  font-size: 1.2rem;
+}
+.header-arrow-icon{
+  cursor: pointer;
+}
+.contact {
+  @include flexbox;
+  flex-direction: column;
+  line-height: 0px;
+  // padding-bottom:5px;
+}
+.header-contactWords {
+}
+.header-contactNumber {
+  color: #000;
+  font-size: 1.1rem;
+}
+.header-buttons {
+  @include flexbox;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.header-button {
+  font-size: 1.5rem;
+  cursor: pointer;
 }

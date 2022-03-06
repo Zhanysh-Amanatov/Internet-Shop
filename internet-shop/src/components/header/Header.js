@@ -9,18 +9,21 @@ import {FiUser} from 'react-icons/fi'
 const Header = () => {
   return (
     <div className='root'>
-        <Link to="/" className='header-link'>Logo/Name</Link>
+        <Link to="/" className='header-logo-name'>Logo</Link>
+        <Link to="/" className='header-logo-name'>Name</Link>
         <div className='categories'>
         <Link to="/" className='header-link'>Категории</Link>
-        <FaAngleDown className='header-icon'/>
+        <FaAngleDown className='header-arrow-icon'/>
         </div>
        <div className='contact'>
          <p className='header-contactWords'>связаться с нами</p> 
          <p className='header-contactNumber'>+996(705)45 65 65</p>
        </div>
-       <GoSearch/>
-       <FiShoppingCart/>
-       <FiUser/>
+       <div className='header-buttons'>
+       <GoSearch className='header-button'/>
+       <FiShoppingCart className='header-button'/>
+       <FiUser className='header-button'/>
+       </div>
     </div>
   )
 }
