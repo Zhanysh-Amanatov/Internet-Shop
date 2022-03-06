@@ -8,7 +8,6 @@ function App() {
       <Router>
         <Header />
       </Router>
-      <h1>Internet shop</h1>
     </div>
   );
 }

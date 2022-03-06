@@ -20,14 +20,17 @@ $main-color: #4877ef;
   @include link;
   font-size: 1.5rem;
   padding-left: 50px;
+  
 }
 .categories {
   @include flexbox;
   justify-content: center;
 }
-.header-link {
+.categories-link {
   @include link;
   font-size: 1.2rem;
+  font-family: Poppins;
+  letter-spacing: 0.1rem;
 }
 .header-arrow-icon{
   cursor: pointer;
@@ -36,9 +39,9 @@ $main-color: #4877ef;
   @include flexbox;
   flex-direction: column;
   line-height: 0px;
-  // padding-bottom:5px;
 }
-.header-contactWords {
+.header-contactWords{
+  letter-spacing: 0.1rem;
 }
 .header-contactNumber {
   color: #000;

@@ -12,7 +12,7 @@ const Header = () => {
         <Link to="/" className='header-logo-name'>Logo</Link>
         <Link to="/" className='header-logo-name'>Name</Link>
         <div className='categories'>
-        <Link to="/" className='header-link'>Категории</Link>
+        <Link to="/" className='categories-link'>Категории</Link>
         <FaAngleDown className='header-arrow-icon'/>
         </div>
        <div className='contact'>
