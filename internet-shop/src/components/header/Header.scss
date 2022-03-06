@@ -1,0 +1,17 @@
+//Mixins
+@mixin flexbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+//Variables
+$main-color: #4877ef;
+
+.root {
+  @include flexbox;
+  color: $main-color;
+}
+.header-link {
+  text-decoration: none;
+  color: $main-color;
+}

@@ -1,11 +1,15 @@
-import logo from './logo.svg';
-import './App.scss';
+import "./App.scss";
+import Header from "./components/header/Header";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-    <h1>Internet shop</h1>    
-</div>
+      <Router>
+        <Header />
+      </Router>
+      <h1>Internet shop</h1>
+    </div>
   );
 }
 
