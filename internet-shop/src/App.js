@@ -1,6 +1,7 @@
 import "./App.scss";
 import Header from "./components/header/Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Slider from "./components/slider/Slider";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Router>
         <Header />
       </Router>
+      <Slider/>
     </div>
   );
 }

@@ -1,0 +1,110 @@
+//Mixins
+@mixin flexbox {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+//Variables
+$main-color: #d4dffc;
+$secondary-color: #4877ef;
+
+.slider {
+  background-color: $main-color;
+  height: 70vh;
+  margin-top: 15px;
+}
+.arrow {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  position: absolute;
+  z-index: 999;
+  color: rgb(175, 171, 171);
+}
+.arrow:hover {
+  color: #565657;
+}
+.prev {
+  top: 45%;
+  left: 1.5rem;
+}
+.next {
+  top: 45%;
+  right: 1.5rem;
+}
+.slide {
+  opacity: 0;
+  transform: translate(100%);
+  transition: all 1s ease;
+}
+.current {
+  opacity: 1;
+  transform: translate(0%);
+}
+.productImg-content {
+  @include flexbox;
+  justify-content: space-around;
+}
+.content {
+  @include flexbox;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2px;
+}
+.productName {
+  font-size: 1.5rem;
+}
+.offer {
+  font-size: 2rem;
+}
+.discound {
+  font-size: 5rem;
+}
+.prices {
+  @include flexbox;
+  width: 100%;
+  justify-content: space-around;
+}
+.oldPrice-crossLine {
+  @include flexbox;
+}
+.oldPrice {
+  font-size: 2rem;
+  width: 100%;
+}
+.line {
+  border-top: 3px solid #4877ef;
+  width: 90px;
+  transform: rotate(-23deg);
+  transform-origin: -80%;
+}
+.newPrice {
+  font-size: 3rem;
+}
+.basket-button {
+  @include flexbox;
+  justify-content: center;
+  width: 180px;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: $secondary-color;
+  border: 2px solid $secondary-color;
+  border-radius: 35px;
+  cursor: pointer;
+  &:hover {
+    background-color: $secondary-color;
+    color: #fff;
+  }
+  &:active {
+    position: relative;
+    top: 3px;
+  }
+}
+.product-img {
+  @include flexbox;
+  width: 600px;
+  height: auto;
+  margin: 75px 0px;
+  border-radius: 5px;
+}
