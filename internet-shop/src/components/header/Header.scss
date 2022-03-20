@@ -55,4 +55,7 @@ $main-color: #4877ef;
 .header-button {
   font-size: 1.5rem;
   cursor: pointer;
+  &:hover{
+    color:#a7a7a7
+  }
 }

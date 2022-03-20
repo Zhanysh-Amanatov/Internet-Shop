@@ -5,6 +5,7 @@ import {FaAngleDown} from 'react-icons/fa'
 import {GoSearch} from 'react-icons/go'
 import {FiShoppingCart} from 'react-icons/fi'
 import {FiUser} from 'react-icons/fi'
+import Dropdown from '../dropdown menu/Dropdown'
 
 const Header = () => {
   return (
@@ -12,8 +13,9 @@ const Header = () => {
         <Link to="/" className='header-logo-name'>Logo</Link>
         <Link to="/" className='header-logo-name'>Name</Link>
         <div className='categories'>
-        <Link to="/" className='categories-link'>Категории</Link>
-        <FaAngleDown className='header-arrow-icon'/>
+        <Dropdown/>
+        {/* <Link to="/" className='categories-link'>Категории</Link>
+        <FaAngleDown className='header-arrow-icon'/> */}
         </div>
        <div className='contact'>
          <p className='header-contactWords'>связаться с нами</p> 

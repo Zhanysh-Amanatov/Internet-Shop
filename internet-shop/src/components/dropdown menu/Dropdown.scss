@@ -1,0 +1,49 @@
+//Mixins
+@mixin flexbox {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+//Variables
+$main-color: #4877ef;
+
+.dropdown-btn {
+  cursor: pointer;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  display: flex;
+  align-items: center;
+}
+.arrow-icon {
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.dropdown-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: auto;
+  height: 30vh;
+  position: absolute;
+  color: $main-color;
+  background-color: #ffffff;
+  z-index: 1;
+  padding: 10px;
+  left: 150px;
+  top: 90px;
+}
+.list-item {
+  cursor: pointer;
+  list-style: none;
+  padding: 5px;
+  color: #000;
+  @include flexbox;
+
+  &:hover{
+    color:#727272
+  }
+}
+.dot-icon {
+  color: $main-color;
+  font-size: 2rem;
+}
